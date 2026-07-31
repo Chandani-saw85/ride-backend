@@ -39,6 +39,8 @@ func health(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	connectDB()
+
 	r := chi.NewRouter()
 
 	// Middleware
